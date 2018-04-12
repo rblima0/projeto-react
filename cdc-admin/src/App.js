@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './css/pure-min.css';
 import './css/side-menu.css';
 import $ from 'jquery';
+import InputCustomizado from './componentes/InputCustomizado';
+import BotaoSubmitCustomizado from './componentes/BotaoSubmitCustomizado';
 
 class App extends Component {
   constructor() {
@@ -84,25 +86,10 @@ class App extends Component {
               <div className="pure-form pure-form-aligned">
 
                 <form className="pure-form pure-form-aligned" onSubmit={this.enviaForm} method="post" >
-                  <div className="pure-control-group">
-                    <label htmlFor="nome">Nome</label> 
-                    <input className="pure-input-1-2" id="nome" type="text" name="nome" value={this.state.nome} onChange={this.setNome}/>
-                  </div>
-
-                  <div className="pure-control-group">
-                    <label htmlFor="email">E-mail</label> 
-                    <input className="pure-input-1-2" id="email" type="email" name="email" value={this.state.email} onChange={this.setEmail} />
-                  </div>
-
-                  <div className="pure-control-group">
-                    <label htmlFor="senha">Senha</label> 
-                    <input className="pure-input-1-2" id="senha" type="password" name="senha" value={this.state.senha} onChange={this.setSenha} />
-                  </div>
-
-                  <div className="pure-control-group">
-                    <label></label> 
-                    <button type="submit" className="pure-button pure-button-primary">Gravar</button>
-                  </div>
+                  <InputCustomizado id="nome" type="text" name="nome" value={this.state.nome} onChange={this.setNome} label="Nome" />
+                  <InputCustomizado id="email" type="email" name="email" value={this.state.email} onChange={this.setEmail} label="E-mail" />
+                  <InputCustomizado id="senha" type="password" name="senha" value={this.state.senha} onChange={this.setSenha} label="Senha"/>
+                  <BotaoSubmitCustomizado label="Gravar"/>
                 </form>             
 
               </div>
