@@ -3,3 +3,11 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.pure-table {
+  width: 100%;
+}
+
+span.error {
+  margin-left: 0.5em;
+}
