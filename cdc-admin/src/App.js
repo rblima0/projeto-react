@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './css/pure-min.css';
 import './css/side-menu.css';
 import { Link } from 'react-router-dom'
-import AutorBox from './Autor';
 
 class App extends Component {
 
