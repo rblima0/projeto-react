@@ -22,8 +22,16 @@
 RODAR EM PRODUÇÃO
 npm run build
 
-SUBIR SERVIDOR
+SUBIR SERVIDOR EM PRODUÇÃO
 npm install pushstate-server
 node_modules/.bin/pushstate-server build
 http://localhost:9000
+
+
+na pasta raiz para rodar o servidor em desenvolvimento
+java -Dspring.datasource.password=123456 -jar jar-cdc-react.jar
+
+No cdc-admin rodar o projeto em desenvolvimento
+npm start
+
 */
