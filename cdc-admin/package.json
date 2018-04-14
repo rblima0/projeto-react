@@ -24,5 +24,6 @@ npm run build
 
 SUBIR SERVIDOR
 npm install pushstate-server
-navegar ate a pasta dentro de ./node_modules/.bin/pushstate-server
+node_modules/.bin/pushstate-server build
+http://localhost:9000
 */
