@@ -17,3 +17,12 @@
     "eject": "react-scripts eject"
   }
 }
+
+/*
+RODAR EM PRODUÇÃO
+npm run build
+
+SUBIR SERVIDOR
+npm install pushstate-server
+navegar ate a pasta dentro de ./node_modules/.bin/pushstate-server
+*/
